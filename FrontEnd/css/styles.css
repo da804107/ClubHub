@@ -16,7 +16,7 @@ body {
 
 /* Header styling */
 header {
-    background: #330066;
+    background: #CCB3FF;
     color: #fff;
     padding: 10px 0;
 }
@@ -130,7 +130,27 @@ h1, h2, h3, h4 {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+    margin: 70px 0 px;
+}
+
+.col {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col img {
+    width: 100%;
+}
+
+.small-container { 
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #my-book-clubs ul {
