@@ -119,6 +119,17 @@ h1, h2, h3, h4 {
     background: #fbc02d;
 }
 
+.event-details {
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* Additional styling for visibility */
+#calendar td.event:hover .event-details {
+    display: block;
+}
+
 #book-clubs ul {
     list-style: none;
     padding: 0;
