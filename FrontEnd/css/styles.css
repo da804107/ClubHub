@@ -123,12 +123,10 @@ h1, h2, h3, h4 {
 #my-library ul {
     list-style: none;
     padding: 0;
-    border: none;
-    background: none;
 }
 
 #my-library ul li {
-    background: #fff;
+    background: none;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
