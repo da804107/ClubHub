@@ -120,13 +120,25 @@ h1, h2, h3, h4 {
     border-radius: 50%;
 }
 
-
-#book-clubs ul {
+#my-library ul {
     list-style: none;
     padding: 0;
 }
 
-#book-clubs ul li {
+#my-library ul li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#my-book-clubs ul {
+    list-style: none;
+    padding: 0;
+}
+
+#my-book-clubs ul li {
     background: #fff;
     margin-bottom: 10px;
     padding: 10px;
