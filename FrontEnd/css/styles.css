@@ -82,14 +82,15 @@ h1, h2, h3, h4 {
 
 /* Calendar table styling */
 #calendar table {
-    width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
+    background: #BB99FF;
+    color: black;
 }
 
 #calendar th, #calendar td {
     padding: 10px;
     text-align: center;
+    font-weight: bold;
     border: 1px solid #ddd;
 }
 
