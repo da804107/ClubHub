@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
 }
 
 /*Calendar Container*/
-.user-calendar {
+#user-calendar {
     background: #ffffff;
     padding: 15px;
     max-width: 900px;
