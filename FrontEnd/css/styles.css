@@ -41,8 +41,72 @@ main {
     margin-top: 20px;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     margin-bottom: 10px;
+}
+
+/* Calendar section styling */
+#calendar {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar Header Styling */
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-header button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calendar-header button:hover {
+    background-color: #0056b3;
+}
+
+#month-year {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Calendar table styling */
+#calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#calendar th, #calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#calendar th {
+    background: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+#calendar td {
+    background: #fafafa;
+    color: #333;
+}
+
+#calendar td:hover {
+    background: #e6e6e6;
+    cursor: pointer;
 }
 
 #book-clubs ul {

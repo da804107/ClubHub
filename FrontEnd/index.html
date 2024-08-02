@@ -28,12 +28,93 @@
         <!-- Dashboard Section -->
          <section id="dashboard">
             <h1>Welcome to Your Dashboard</h1>
-            <p>Here you can manage your book clubs, view upcoming events you've RSVP'd to, and participate in active discussions.</p>
+            <p>Here you can manage your book clubs, view upcoming events you've RSVP'd to.</p>
          </section>
 
-         <!-- Your Book Club Section -->
-        <section id="your-book-clubs">
-            <h2>My Book Clubs</h2>
+         <!-- calendar for user to see all events they've RSVP'd to -->
+          <section id="user-calendar">
+            <h2>My Calendar</h2>
+            <div id="calendar-header">
+                <button id="prev-month">&lt; Previous Month</button>
+                <span id="month-year">August 2024</span> <!-- Static for now -->
+                <button id="next-month">Next Month &gt;</button>
+            </div>
+            
+            <!-- Calendar Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+          </section>
+
+         <!-- Section for books user is currently reading for all clubs -->
+         <section id="my-library">
+            <h3>My Library</h2>
+            <ul>
+                <li>Book 1</li>
+                <li>Book 2</li>
+            </ul>
+         </section>
+
+         <!-- Section for Book Clubs user is a member of -->
+        <section id="my-book-clubs">
+            <h4>My Book Clubs</h2>
             <ul>
                 <li>Book Club 1</li>
                 <li>Book Club 2</li>
