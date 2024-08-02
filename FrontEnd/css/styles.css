@@ -49,89 +49,77 @@ h1, h2, h3, h4 {
 #user-calendar {
     background: #ffffff;
     padding: 15px;
-    aspect-ratio: 24 / 8;
+    max-width: 900px;
     margin: 0 auto;
-    overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-between;
 }
 
 /* Month header */
 .month {
-    padding: 70px 25px;
-    width: 100%;
     background: #CCB3FF;
+    padding: 20px;
     text-align: center;
-  }
-  
-  /* Month list */
-  .month ul {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Month list */
+.month ul {
     margin: 0;
     padding: 0;
-  }
-  
-  .month ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month ul li {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
-  }
-  
-  /* Previous button inside month header */
-  .month .prev {
-    float: left;
-    padding-top: 10px;
-  }
-  
-  /* Next button */
-  .month .next {
-    float: right;
-    padding-top: 10px;
-  }
-  
-  /* Weekdays (Mon-Sun) */
-  .weekdays {
+}
+
+/* Weekdays */
+.weekdays {
     margin: 0;
     padding: 10px 0;
-    background-color:#ddd;
+    background-color: #ddd;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .weekdays li {
-    display: inline-block;
-    width: 13.6%;
-    color: #666;
+}
+
+.weekdays li {
+    flex: 1;
     text-align: center;
-  }
-  
-  /* Days (1-31) */
-  .days {
+    color: #666;
+}
+
+/* Days */
+.days {
     padding: 10px 0;
     background: #eee;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .days li {
+}
+
+.days li {
     list-style-type: none;
-    display: inline-block;
-    width: 13.6%;
+    width: 13.6%; /* Adjust this to change the spacing of the days */
     text-align: center;
     margin-bottom: 5px;
-    font-size:12px;
+    font-size: 12px;
     color: #777;
-  }
-  
-  /* Highlight the "current" day */
-  .days li .active {
+}
+
+/* Highlight the "current" day */
+.days li .active {
     padding: 5px;
     background: #1abc9c;
-    color: white !important
-  }
+    color: white !important;
+    border-radius: 50%;
+}
+
 
 #book-clubs ul {
     list-style: none;
