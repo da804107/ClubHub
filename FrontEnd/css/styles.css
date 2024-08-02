@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     line-height: 1.6;
     background-color: white;
     color: #333;
@@ -43,6 +43,11 @@ main {
 
 h1, h2, h3, h4 {
     margin-bottom: 10px;
+    justify-content: center;
+}
+
+section {
+    padding: 40px 0px;
 }
 
 /*Calendar Container*/
@@ -121,7 +126,6 @@ h1, h2, h3, h4 {
     border-radius: 50%;
 }
 
-/*library styling*/
 /* Library Styling */
 .categories {
     margin: 70px 0;
