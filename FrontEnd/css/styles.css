@@ -60,7 +60,7 @@ h1, h2, h3, h4 {
 /* Month header */
 .month {
     padding: 70px 25px;
-    width: 50%;
+    width: 100%;
     background: #CCB3FF;
     text-align: center;
   }
@@ -95,6 +95,8 @@ h1, h2, h3, h4 {
     margin: 0;
     padding: 10px 0;
     background-color:#ddd;
+    display: flex;
+    justify-content: space-between;
   }
   
   .weekdays li {
@@ -109,6 +111,9 @@ h1, h2, h3, h4 {
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .days li {
