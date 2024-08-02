@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #EEE6FF;
     color: #333;
     padding: 20px;
 }
@@ -100,7 +100,7 @@ h1, h2, h3, h4 {
 }
 
 #calendar td {
-    background: #fafafa;
+    background: #BB99FF;
     color: #333;
 }
 
