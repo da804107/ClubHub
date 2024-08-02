@@ -50,7 +50,7 @@ h1, h2, h3, h4 {
     background: #ffffff;
     padding: 15px;
     max-width: 10000px;
-    max-height: 10000px;
+    max-height: 100000px;
     margin: 0 auto;
     overflow: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -61,7 +61,7 @@ h1, h2, h3, h4 {
 /* Month header */
 .month {
     padding: 70px 25px;
-    width: 100%;
+    width: 50%;
     background: #CCB3FF;
     text-align: center;
   }
