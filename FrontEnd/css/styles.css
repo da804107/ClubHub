@@ -109,6 +109,16 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
+/* Highlight event dates (optional) */
+#calendar td.event {
+    background: #ffeb3b;
+    font-weight: bold;
+}
+
+#calendar td.event:hover {
+    background: #fbc02d;
+}
+
 #book-clubs ul {
     list-style: none;
     padding: 0;
