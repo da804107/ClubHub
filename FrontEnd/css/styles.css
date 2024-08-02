@@ -45,91 +45,76 @@ h1, h2, h3, h4 {
     margin-bottom: 10px;
 }
 
-/* Calendar section styling */
-#calendar {
-    margin-top: 20px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Calendar Header Styling */
-#calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#calendar-header button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#calendar-header button:hover {
-    background-color: #0056b3;
-}
-
-#month-year {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-/* Calendar table styling */
-#calendar table {
-    border-collapse: collapse;
-    background: #BB99FF;
-    color: black;
-}
-
-#calendar th, #calendar td {
-    padding: 10px;
+/* Month header */
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
     text-align: center;
-    font-weight: bold;
-    border: 1px solid #ddd;
-}
-
-#calendar th {
-    background: #f4f4f4;
-    color: #333;
-    font-weight: bold;
-}
-
-#calendar td {
-    background: #BB99FF;
-    color: #333;
-}
-
-#calendar td:hover {
-    background: #e6e6e6;
-    cursor: pointer;
-}
-
-/* Highlight event dates (optional) */
-#calendar td.event {
-    background: #ffeb3b;
-    font-weight: bold;
-}
-
-#calendar td.event:hover {
-    background: #fbc02d;
-}
-
-.event-details {
-    font-size: 0.8em;
-    margin-top: 5px;
-    color: #333;
-}
-
-/* Additional styling for visibility */
-#calendar td.event:hover .event-details {
-    display: block;
-}
+  }
+  
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  /* Next button */
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
 
 #book-clubs ul {
     list-style: none;
