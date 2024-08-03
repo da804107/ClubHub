@@ -4,36 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Club Home</title>
     <!-- Link CSS file -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- header section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="club_home.html">Club Home</a></li>
-                <li><a href="#">Chats</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="login.html">Sign Out</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- header section -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="club_home.html">Club Home</a></li>
+                    <li><a href="#">Chats</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Main Content -->
+        <main>
+            <!-- Club Info Section -->
+             <section id="busy-minds-home">
+                <h1>The Busy Minds Book Club</h1>
+                <p>We're an intimate group started by two friends who share a passion for easy reads that fit perfectly into their busy schedules. Balancing work and school, they choose engaging and enjoyable books that can be read quickly. They come together to discuss their thoughts and experiences, making their reading journey both fun and manageable.</p>
+                <p>Here you can view upcoming events, peruse the club's library, and access member profiles.</p>
+             </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Dashboard Section -->
-         <section id="dashboard">
-            <h1>Welcome Back!</h1>
-            <p>Here you can view upcoming events you've RSVP'd to and peruse your library.</p>
-         </section>
 
          <!-- calendar for user to see all events they've RSVP'd to -->
-          <section id="user-calendar">
-            <h2>My Calendar</h2>
+          <section id="club-calendar">
+            <h2>Our Calendar</h2>
             <div class="month">
                 <ul>
                   <li class="prev">&#10094;</li>
@@ -89,8 +91,8 @@
 
          <!-- Section for books user is currently reading for all clubs -->
  <!-- Section for books user is currently reading for all clubs -->
-<section id="my-library">
-    <h3>My Library</h3>
+<section id="club-library">
+    <h3>Our Library</h3>
     <div class="categories">
         <div class="small-container">
             <div class="row">
@@ -99,14 +101,6 @@
                     <div class="book">
                         <div class="front">
                             <img src="bookCovers/NormalPeople.jpeg" alt="Normal People">
-                        </div>
-                        <div class="back">
-                            <h3>Your Opinion</h3>
-                            <form>
-                                <label for="opinion1">What did you think?</label>
-                                <textarea id="opinion1" name="opinion1" rows="4" placeholder="Share your thoughts..."></textarea>
-                                <button type="submit">Submit</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -117,14 +111,6 @@
                         <div class="front">
                             <img src="bookCovers/FourthWing.jpeg" alt="Fourth Wing">
                         </div>
-                        <div class="back">
-                            <h3>Your Opinion</h3>
-                            <form>
-                                <label for="opinion2">What did you think?</label>
-                                <textarea id="opinion2" name="opinion2" rows="4" placeholder="Share your thoughts..."></textarea>
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
                     </div>
                 </div>
     
@@ -134,20 +120,13 @@
                         <div class="front">
                             <img src="bookCovers/JustAnotherMissingPerson.jpeg" alt="Just Another Missing Persion">
                         </div>
-                        <div class="back">
-                            <h3>Your Opinion</h3>
-                            <form>
-                                <label for="opinion3">What did you think?</label>
-                                <textarea id="opinion3" name="opinion3" rows="4" placeholder="Share your thoughts..."></textarea>
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
+</section>
 </section>
 
     </main>
