@@ -4,14 +4,14 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Login Form</title>
+      <title>Create Account Form</title>
       <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
       <div class="main">
             <h1>Busy Minds Book Club</h1>
-            <h3>Enter your member credentials</h3>
+            <h3>Create your member credentials</h3>
             <form action="">
                   <label for="first">
                         Username:
@@ -19,7 +19,7 @@
                   <input type="text" 
                          id="first" 
                          name="first" 
-                         placeholder="Enter your Username" required>
+                         placeholder="Create a Username" required>
 
                   <label for="password">
                         Password:
@@ -27,20 +27,24 @@
                   <input type="password"
                          id="password" 
                          name="password"
-                         placeholder="Enter your Password" required>
+                         placeholder="Create a Password" required>
+                  <input type="password"
+                         id="password" 
+                         name="password"
+                         placeholder="Confirm Password" required>
+
 
                   <div class="wrap">
                         <button type="submit"
-                                onclick="redirectToHome()">
+                                onclick="solve()">
                               Submit
                         </button>
-
                   </div>
             </form>
-            <p>Not registered?
-                  <a href="create_account.html"
+            <p>Already Have an Account?
+                  <a href="login.html"
                      style="text-decoration: none;">
-                        Create an account
+                        login
                   </a>
             </p>
       </div>
