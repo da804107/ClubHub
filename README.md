@@ -14,7 +14,7 @@ ClubHub is a web application designed to help users interact with the Busy Minds
 
 ## Project Overview
 
-ClubHub is designed to enhance the book club experience by offering a centralized platform where users can manage multiple book clubs, track reading progress, and engage with other members. The application includes a user-friendly interface with a dashboard that displays upcoming events, book reviews, and more.
+ClubHub is designed to enhance the busy minds book club experience by offering a centralized platform where users can manage their membership, track their reading progress, and engage with other members. The application includes a user-friendly interface with a dashboard that displays upcoming events, book reviews, and more.
 
 
 ## Setup and Installation
