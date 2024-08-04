@@ -17,7 +17,10 @@
                   </div>
               </div>
             <h2>Enter your member credentials</h2>
-            <form action="">
+            <div id="login-error-holder">
+                  <p id="login-error">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div>
+            <form action="" id="login-form">
                   <label for="first">
                         Username:
                   </label>
@@ -35,8 +38,7 @@
                          placeholder="Enter your Password" required>
 
                   <div class="wrap">
-                        <button type="submit" id="login-submit"
-                                onclick="redirectToHome()">
+                        <button type="submit" id="login-submit">
                               Submit
                         </button>
 
