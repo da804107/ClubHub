@@ -11,7 +11,12 @@
 <body>
       <div class="main">
             <h1>Busy Minds Book Club</h1>
-            <h3>Enter your member credentials</h3>
+            <div class="small-container">
+                  <div class="club-logo">
+                      <img src="bookCovers/ClubLogo.png" alt="Busy Minds Logo">
+                  </div>
+              </div>
+            <h2>Enter your member credentials</h2>
             <form action="">
                   <label for="first">
                         Username:
@@ -30,14 +35,15 @@
                          placeholder="Enter your Password" required>
 
                   <div class="wrap">
-                        <button type="submit"
+                        <button type="submit" id="login-submit"
                                 onclick="redirectToHome()">
                               Submit
                         </button>
 
                   </div>
             </form>
-            <p>Not registered?
+
+            <p class="login-message">Not registered?
                   <a href="create_account.html"
                      style="text-decoration: none;">
                         Create an account
