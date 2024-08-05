@@ -27,8 +27,8 @@
     <main>
         <!-- placeholder -->
          <section id="placeholder">
-            <h1>Your Profile</h1>
-            <p>Here you can make changes and view your profile, view the members you're connected with, and your club statistics.</p>
+            <h1>Your Settings</h1>
+            <p>Here you can make changes to your about me, your notification prefences, and other things I haven't thought of.</p>
          </section>
 
          <section class="user-info">
@@ -41,9 +41,13 @@
             </div>
             <div class="about-me">
                 <h2>About me...</h2>
-                <p>My favorite book is: <span id="display-favorite-book"></span></p>
-                <p>My favorite genre is: <span id="display-favorite-genre"></span></p>
-                <p>My 2024 reading goals are: <span id="display-reading-goals"></span></p>
+                <label for="favorite-book">My favorite book is:</label>
+                <input type="text" id="'favorite-book" placeholder="Enter your favorite book">
+                <label for="favorite-genre">My favorite genre is:</label>
+                <input type="text" id="favorite-genre" placeholder="Enter your favorite genre">
+                <label for="reading-goals">My 2024 reading goals is:</label>
+                <textarea id="reading-goals" placeholder="Enter your reading goals"></textarea>
+                <button type="button">Save Changes</button>
             </div>
          </section>
          
