@@ -37,7 +37,7 @@ ClubHub is designed to enhance the busy minds book club experience by offering a
 - **Login**: Users can log in or create an account to access personalized features.
 - **Chats**: Users can create private conversations with other members and manage existing conversations.
 - **Settings**: Users can update their profile and notification preferences.
-- **Profile**: User-specific profile information and settings.
+- **Profile**: User-specific profile information.
 - **Discussion Page**: A dedicated space where members can discuss and share thoughts on the current books being read by the club.
 
 
