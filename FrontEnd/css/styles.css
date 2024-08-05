@@ -416,23 +416,82 @@ input {
 }
 
 /* Profile Styling */ 
+/* Profile Styling */
 .profile {
+    position: relative;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
     display: flex;
-    align-items: center; /* Vertically center the image and text container */
-    gap: 20px; /* Add some space between the image and text */
+    align-items: center;
+    gap: 20px;
 }
 
 .profile-image {
-    width: 100px; /* Set a fixed size for the image */
+    width: 100px;
     height: 100px;
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image covers the circular area */
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
+.change-image-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.profile:hover .change-image-label {
+    opacity: 1;
+}
+
+/* Settings Button Styling */
+.settings-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.settings-button {
+    padding: 5px 10px; /* Reduce padding to make the button smaller */
+    border: none;
+    border-radius: 5px;
+    background-color: #283e50;
+    color: white;
+    font-size: 0.9em; /* Slightly reduce the font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto; /* Set the width to auto so it adjusts to the content */
+    min-width: 100px; /* Optional: set a minimum width if needed */
+}
+
+.settings-button:hover {
+    background-color: #1f3140;
+}
+
+#profile-page p{
+    font-weight: bold;
+    color: #555;
+    text-align: left; /* Align labels to the left */
+    display: block; /* Ensure labels take up full width and stay on their own line */
+    font-size: 1em;
+}
+
+
+/* About Me Section Styling */
 .profile-text {
     display: flex;
     flex-direction: column; /* Stack the name and description vertically */

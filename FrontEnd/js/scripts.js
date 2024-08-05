@@ -141,6 +141,7 @@ function initializeCalendar() {
         daysElement.innerHTML = liTags;
     }
 
+
     // Event listeners for the previous and next icons
     prevNextIcons.forEach(icon => {
         icon.addEventListener("click", () => {
@@ -165,28 +166,14 @@ function initializeCalendar() {
     renderCalendar();
 }
 
-// Function to save settings and redirect to profile page
-function saveSettings() {
-    const favoriteBook = document.getElementById('favorite-book').value;
-    const favoriteGenre = document.getElementById('favorite-genre').value;
-    const readingGoals = document.getElementById('reading-goals').value;
-
-    localStorage.setItem('favoriteBook', favoriteBook);
-    localStorage.setItem('favoriteGenre', favoriteGenre);
-    localStorage.setItem('readingGoals', readingGoals);
-
-    window.location.href = 'profile.html';
+//profile settings button function
+function goToSettings() {
+    window.location.href = 'settings.html';
 }
 
-// Function to load saved settings on the profile page
-function loadProfile() {
-    const favoriteBook = localStorage.getItem('favoriteBook');
-    const favoriteGenre = localStorage.getItem('favoriteGenre');
-    const readingGoals = localStorage.getItem('readingGoals');
-
-    document.getElementById('display-favorite-book').textContent = favoriteBook || "Not set";
-    document.getElementById('display-favorite-genre').textContent = favoriteGenre || "Not set";
-    document.getElementById('display-reading-goals').textContent = readingGoals || "Not set";
+//settings profile button function
+function goToProfile() {
+    window.location.href = 'profile.html';
 }
 
 // Initialize all functionalities when DOM is fully loaded
@@ -195,13 +182,4 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeCreateAccount();
     initializeCalendar();
     initializeStarRating();
-
-    if (document.getElementById('display-favorite-book')) {
-        loadProfile();
-    }
-
-    const saveButton = document.querySelector('.about-me button');
-    if (saveButton) {
-        saveButton.addEventListener('click', saveSettings);
-    }
 });

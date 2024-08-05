@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club Home</title>
+    <title>Settings</title>
     <!-- Link CSS file -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -31,9 +31,11 @@
             <p>Here you can make changes to your about me, your notification prefences, and other things I haven't thought of.</p>
          </section>
 
-         <section class="user-info">
+         <section class="user-settings">
             <div class="profile">
-                <img class="profile-image" src="bookCovers/daisyProfile.JPG" alt="Profile Image">
+                <img id="profile-image" class="profile-image" src="bookCovers/daisyProfile.JPG" alt="Profile Image">
+                <input type="file" id="profile-image-input" accept="image/*" style="display: none;">
+                <label for="profile-image-input" class="change-image-label">Change Image</label>
                 <div class="profile-text">
                     <h1 class="Profile-name">Daisy Hernandez</h1>
                     <p class="profile-description">A busy mind.</p>
@@ -42,14 +44,17 @@
             <div class="about-me">
                 <h2>About me...</h2>
                 <label for="favorite-book">My favorite book is:</label>
-                <input type="text" id="'favorite-book" placeholder="Enter your favorite book">
+                <input type="text" id="favorite-book" placeholder="Enter your favorite book">
                 <label for="favorite-genre">My favorite genre is:</label>
                 <input type="text" id="favorite-genre" placeholder="Enter your favorite genre">
-                <label for="reading-goals">My 2024 reading goals is:</label>
+                <label for="reading-goals">My 2024 reading goals are:</label>
                 <textarea id="reading-goals" placeholder="Enter your reading goals"></textarea>
-                <button type="button">Save Changes</button>
+                <!-- Profile Button -->
+                <div class="profile-button-container">
+                    <button class="profile-button" onclick="goToProfile()">Save Changes</button>
+                </div>
             </div>
-         </section>
+        </section>        
          
     </main>
 
