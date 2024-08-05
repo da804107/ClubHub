@@ -340,20 +340,7 @@ input {
     align-items: center;
 }
 
-#new-account-error1{
-    width: 23%;
-    text-align: center;
-    margin: 0;
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #8a0000;
-    border: 1px solid #8a0000;
-    background-color: #e58f8f;
-    opacity: 0;
-}
-
-#new-account-error2{
+#new-account-error{
     width: 23%;
     text-align: center;
     margin: 0;
@@ -415,7 +402,6 @@ input {
     align-items: center;
 }
 
-/* Profile Styling */ 
 /* Profile Styling */
 .profile {
     position: relative;

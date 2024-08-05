@@ -63,36 +63,37 @@ function initializeCreateAccount() {
     const createAccountForm = document.getElementById("create-account-form");
     if (createAccountForm) {
         const createAccountButton = document.getElementById("new-account-submit");
-        const createAccountError1Msg = document.getElementById("new-account-error1");
-        const createAccountError2Msg = document.getElementById("new-account-error2");
+        const createAccountErrorMsg = document.getElementById("new-account-error");
 
         createAccountButton.addEventListener("click", (e) => {
             e.preventDefault(); // Prevent the form from submitting
-            const username = document.getElementById("first").value;
-            const password = document.getElementById("password").value;
-            const confirmPassword = document.getElementById("confirm-password").value;
+            const username = document.getElementById("first").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const confirmPassword = document.getElementById("confirm-password").value.trim();
+
+            // Validate that all fields are filled
+            if (!username || !password || !confirmPassword) {
+                createAccountErrorMsg.style.opacity = 1;
+                createAccountErrorMsg.textContent = "All fields are required.";
+                return;
+            }
 
             if (password === confirmPassword && username !== "daisy") {
-                createAccountError1Msg.style.opacity = 0;
-                createAccountError2Msg.style.opacity = 0;
+                createAccountErrorMsg.style.opacity = 0;
                 alert("Account was successfully made.");
                 // Redirect to the login page
                 window.location.href = "login.html";
             } else if (username === "daisy") {
-                createAccountError1Msg.style.opacity = 0;
-                createAccountError2Msg.style.opacity = 1;
-                createAccountError2Msg.textContent= "Username already exists, please choose another.";
-            } else if(password !== confirmPassword) {
-                createAccountError2Msg.style.opacity = 0;
-                createAccountError1Msg.style.opacity = 1;
-                createAccountError1Msg.textContent = "Passwords don't match, please try again.";
-            } else {
-                loginErrorMsg.style.opacity = 1;
-                loginErrorMsg.textContent = "Passwords don't match, please try again.";
+                createAccountErrorMsg.style.opacity = 1;
+                createAccountErrorMsg.textContent= "Username already exists, please choose another.";
+            } else if (password !== confirmPassword) {
+                createAccountErrorMsg.style.opacity = 1;
+                createAccountErrorMsg.textContent = "Passwords don't match, please try again.";
             }
         });
     }
 }
+
 
 // Function for calendar functionality
 function initializeCalendar() {
