@@ -172,12 +172,12 @@ function initializeCalendar() {
 
 //profile settings button function
 function goToSettings() {
-    window.location.href = 'settings.html';
+    window.location.href = 'user_settings.html';
 }
 
 //settings profile button function
 function goToProfile() {
-    window.location.href = 'profile.html';
+    window.location.href = 'user_profile.html';
 }
 
 // Initialize all functionalities when DOM is fully loaded
