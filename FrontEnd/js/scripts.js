@@ -82,10 +82,13 @@ function initializeCreateAccount() {
                 createAccountError1Msg.style.opacity = 0;
                 createAccountError2Msg.style.opacity = 1;
                 createAccountError2Msg.textContent= "Username already exists, please choose another.";
-            } else {
+            } else if(password !== confirmPassword) {
                 createAccountError2Msg.style.opacity = 0;
                 createAccountError1Msg.style.opacity = 1;
                 createAccountError1Msg.textContent = "Passwords don't match, please try again.";
+            } else {
+                loginErrorMsg.style.opacity = 1;
+                loginErrorMsg.textContent = "Passwords don't match, please try again.";
             }
         });
     }
