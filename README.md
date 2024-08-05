@@ -8,6 +8,7 @@ ClubHub is a web application designed to help users interact with the Busy Minds
 - Project Overview
 - Setup and Installation
 - Usage
+- Features
 - Technologies Used
 - Contact
 
@@ -34,8 +35,16 @@ ClubHub is designed to enhance the busy minds book club experience by offering a
 - **Dashboard**: The main landing page after logging in. Users can view events they've accepted and their current reading list.
 - **Club Home**: Provides information on the book club, allowing users to explore and connect with other users.
 - **Login**: Users can log in or create an account to access personalized features.
-- **Book Flip Interaction**: On the dashboard, users can hover over book covers to flip them and provide their opinions on the books.
+- **Chats**: Users can create private conversations with other members and manage existing conversations.
+- **Settings**: Users can update their profile and notification preferences.
+- **Profile**: User-specific profile information and settings.
+- **Discussion Page**: A dedicated space where members can discuss and share thoughts on the current books being read by the club.
 
+
+## Features
+- **Calendar**: View and manage upcoming club events.
+- **Book Library**: Access and rate books currently being read by the club.
+- **Book Flip Interaction**: On the dashboard, users can hover over book covers to flip them and provide their opinions on the books.
 
 ## Technologies Used
 
