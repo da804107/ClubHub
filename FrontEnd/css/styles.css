@@ -40,6 +40,10 @@ main {
     margin-top: 20px;
 }
 
+.login-header {
+    margin-top: 50px;
+}
+
 h1, h2, h3, h4 {
     font-size: 2em;
     margin-bottom: 10px;
