@@ -1,6 +1,6 @@
 # ClubHub
 
-ClubHub is a web application designed to help users interact with the Busy Minds Book Club, track their reading progress, and participate in discussions and events. The platform includes features such as a personal dashboard, a calendar for upcoming events, a library for books currently being read, and user profiles.
+ClubHub is the frontend capabilities of a web application designed to help users interact with the Busy Minds Book Club, track their reading progress, and participate in discussions and events. The platform includes features such as a personal dashboard, a calendar for upcoming events, a library for books currently being read, and user profiles.
 
 
 ## Table of Contents
@@ -27,7 +27,7 @@ ClubHub is designed to enhance the busy minds book club experience by offering a
    - `cd clubhub`
 
 3. **Open the Project**
-   - Open the `login.html` file in your web browser to start using the application.
+   - Open the `login.html` file in your web browser to start viewing the application.
 
 
 ## Usage
