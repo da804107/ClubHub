@@ -235,7 +235,8 @@ section {
 .rating label::before {
     content: "★";
     position: absolute;
-    opacity: 0;
+    color: #FFFBE6;
+    opacity: 1;
     font-size: 1em;  /* Adjust font size to fit within the container */
 }
 
@@ -256,6 +257,20 @@ section {
     color: #283e50;
 }
 
+.average-rating span {
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #283e50; /* Color for filled stars */
+    margin-right: 2px;
+}
+
+.average-rating span.empty {
+    color: #FFFBE6; /* Light color for empty stars */
+}
+
+.average-rating span.half-filled {
+    /* Optional: Style half-star differently if needed */
+    color: #283e50;
+}
 
 .front img {
     width: 100%;
