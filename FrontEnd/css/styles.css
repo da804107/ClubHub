@@ -486,7 +486,6 @@ input {
     font-size: 1em;
 }
 
-
 /* About Me Section Styling */
 .profile-text {
     display: flex;
@@ -503,6 +502,30 @@ input {
     font-size: 1.2em;
     color: #666;
     margin-top: 5px; /* Add a small margin between the name and description */
+}
+
+/*member statistics section styling*/
+.member-statistics {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #FFFBE6; /* Light background for the section */
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width of the section */
+    margin-left: auto;
+    margin-right: auto; /* Center the section */ 
+}
+
+.member-statistics h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #283e50; /* Matching header color */
+    text-align: left; /* Align header to the left */
+}
+
+.member-statistics p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333; /* Text color */
 }
 
 /* About Me Section Styling */
