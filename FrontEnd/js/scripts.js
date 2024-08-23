@@ -39,15 +39,8 @@ function initializeLogin() {
             const username = document.getElementById("first").value;
             const password = document.getElementById("password").value;
 
-            if (username === "daisy" && password === "herngonz01") {
+            if (username === "sample" && password === "sample1234*") {
                 loginErrorMsg.style.opacity = 0;
-                alert("You have successfully logged in.");
-                // Redirect to the home page or dashboard
-                window.location.href = "index.html";
-            }
-            else if (username === "sheyla" && password === "sant00") {
-                loginErrorMsg.style.opacity = 0;
-                alert("You have successfully logged in.");
                 // Redirect to the home page or dashboard
                 window.location.href = "index.html";
             } else {
