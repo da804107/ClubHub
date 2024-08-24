@@ -27,7 +27,8 @@ ClubHub is designed to enhance the busy minds book club experience by offering a
    - `cd clubhub`
 
 3. **Open the Project**
-   - Open the `login.html` file in your web browser to start viewing the application. Currently, login is hardcoded with a user login of "sample" and password of "sample1234*"
+   - Open the `login.html` file in your web browser to start viewing the application.
+     As this is only for UI/UX practice, currently, the login is hardcoded with a user login of "sample" and password of "sample1234*"
 
 
 ## Usage
