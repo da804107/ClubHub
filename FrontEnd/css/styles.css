@@ -1,11 +1,11 @@
-/* Reset default browser styles */
+/* reset default browser styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* general body styling */
 body {
     font-family: Georgia, serif;
     line-height: 1.6;
@@ -13,7 +13,7 @@ body {
     color: #333;
 }
 
-/* Header styling */
+/* general header styling */
 header {
     background: #283e50;
     color: #FFFBE6;
@@ -35,7 +35,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Main Content styling */
+/* general main content styling */
 main {
     margin-top: 20px;
 }
@@ -46,16 +46,18 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-/* Specific styling for chats page if needed */
+/* specific styling for chats.html */
 #chats-page h1 {
-    margin-top: 50px; /* Apply the same margin as in index.html */
-    text-align: center; /* Ensure consistent alignment */
+    margin-top: 50px; /* same margin style as index.html */
+    text-align: center;
 }
 
+/* specific styling for login.html */
 .login-header {
     margin-top: 50px;
 }
 
+/* specific styling for paragraph across htmls */ 
 #dashboard p {
     text-align: center;
 }
@@ -73,11 +75,12 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
+/* general styling for sections */
 section {
     padding: 20px 0px;
 }
 
-/* User Calendar Container*/
+/* styling for the calendars in index.html and club_home.html */
 #user-calendar {
     background: #FFFBE6;
     padding: 15px;
@@ -92,7 +95,6 @@ section {
     margin: 0 auto;
 }
 
-/* Month header */
 .month {
     background: #283e50;
     padding: 20px;
@@ -100,7 +102,6 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Month list */
 .month ul {
     margin: 0;
     padding: 0;
@@ -117,7 +118,6 @@ section {
     letter-spacing: 3px;
 }
 
-/* Weekdays */
 .weekdays {
     margin: 0;
     padding: 10px 0;
@@ -133,7 +133,6 @@ section {
     list-style-type: none;
 }
 
-/* Days */
 .days {
     padding: 10px 0;
     background: #F2EEDB;
@@ -144,14 +143,13 @@ section {
 
 .days li {
     list-style-type: none;
-    width: 13.6%; /* Adjust this to change the spacing of the days */
+    width: 13.6%;
     text-align: center;
     margin-bottom: 5px;
     font-size: 12px;
     color: #777;
 }
 
-/* Highlight the "current" day */
 .days li .active {
     padding: 5px;
     background: #283e50;
@@ -159,7 +157,45 @@ section {
     border-radius: 50%;
 }
 
-/* Library Styling */
+/* styling for the subheadings and discussion sections in chats.html */
+.subheading {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #283e50;
+    text-align: center;
+}
+
+.discussion-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F2EEDB;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discussion-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.discussion-list li {
+    margin-bottom: 10px;
+}
+
+.discussion-list li a {
+    text-decoration: none;
+    color: #283e50;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.discussion-list li a:hover {
+    color: #1f3140;
+}
+
+/* styling for the library sections */
 .categories {
     margin: 70px 0;
 }
@@ -167,18 +203,15 @@ section {
 .row {
     justify-content: center;
     display: flex;
-    gap: 20px; /* Optional: Adds space between each book */
-    flex-wrap: wrap; /* Ensures books wrap onto the next line if the screen is too narrow */
+    gap: 20px;
+    flex-wrap: wrap; /* ensures books wrap onto the next line if the screen is too narrow */
 }
 
-
-/* Container for the flip effect */
 .book-container {
     perspective: 1000px;
     margin-bottom: 20px;
 }
 
-/* Book element, which includes the front and back */
 .book {
     width: 200px;
     height: 300px;
@@ -187,7 +220,6 @@ section {
     transition: transform 0.6s;
 }
 
-/* Front and back faces */
 .front, .back {
     position: absolute;
     width: 100%;
@@ -197,12 +229,10 @@ section {
     overflow: hidden;
 }
 
-/* Front face */
 .front {
     background: white;
 }
 
-/* Back face */
 .back {
     background: #E8E4D2;
     transform: rotateY(180deg);
@@ -210,21 +240,26 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;  /* Reduce padding to fit everything */
+    padding: 10px;
 }
 
-/* Flip the book when the container is hovered */
 .book-container:hover .book {
     transform: rotateY(180deg);
 }
 
-/* Star Rating */
+.front img {
+    width: 100%;
+    height: auto; 
+    border-radius: 5px;
+}
+
+/* styling for the user rating system in index.html */
 .rating {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    font-size: 1.5em; /* Adjust font size to fit */
-    margin: 10px 0;  /* Add some margin for spacing */
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 .rating input {
@@ -243,11 +278,11 @@ section {
     position: absolute;
     color: #FFFBE6;
     opacity: 1;
-    font-size: 1em;  /* Adjust font size to fit within the container */
+    font-size: 1em;
 }
 
 .rating input:checked ~ label::before {
-    color: #283e50; /* The color for the selected stars */
+    color: #283e50;
 }
 
 .rating label:hover::before,
@@ -260,57 +295,7 @@ section {
     color: #283e50;
 }
 
-
-/* Styles for each star */
-.star {
-    display: inline-block;
-    position: relative;
-    font-size: 2em; /* Increase the size of the stars */
-    color: #FFFBE6; /* Color for the unfilled star */
-}
-
-/* Filled star */
-.star.filled::before {
-    content: "★"; /* Use the filled star character */
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #283e50; /* Color for the filled star */
-    z-index: 1; /* Ensure it's on top */
-}
-
-/* Empty star (default appearance of the star) */
-.star::before {
-    content: "★"; /* Use the empty star character */
-    color: #FFFBE6; /* Color for the outline of the star */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Ensure it's below the filled part */
-}
-
-
-
-.front img {
-    width: 100%;
-    height: auto; /* Ensure the image scales correctly */
-    border-radius: 5px;
-}
-
-/*club logo*/
-.club-logo {
-    display: flex;
-    justify-content: center; /* Centers the logo horizontally */
-    align-items: center; /* Centers the logo vertically (if the container has a height) */
-    margin-bottom: 10px;
-}
-
-.club-logo img {
-    width: 15%; /* Adjust the size of the logo */
-    height: auto;
-    border-radius: 5px;
-}
-
+/* styling for the user rating submit button */
 button {
     padding: 15px;
     border-radius: 10px;
@@ -324,7 +309,47 @@ button {
     font-size: 16px;
 }
 
-/*login page*/
+/* styling for the average rating in the club_home.html */
+.star {
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    color: #FFFBE6;
+}
+
+.star.filled::before { /* filled star */ 
+    content: "★";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #283e50;
+    z-index: 1;
+}
+
+.star::before { /* empty star */ 
+    content: "★";
+    color: #FFFBE6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* styling for the club logo */
+.club-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.club-logo img {
+    width: 15%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* styling for the login.html and create_account.html */
 
 label {
     display: block;
@@ -416,19 +441,18 @@ input {
 }
 
 .login-message {
-    width: 50%; /* Matches the width of the input fields and button */
-    margin: 20px auto; /* Centers the paragraph horizontally */
-    text-align: center; /* Centers the text within the paragraph */
-    font-size: 14px; /* Adjust font size if needed */
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
 }
 
 .new-account-message {
-    width: 50%; /* Matches the width of the input fields and button */
-    margin: 20px auto; /* Centers the paragraph horizontally */
-    text-align: center; /* Centers the text within the paragraph */
-    font-size: 14px; /* Adjust font size if needed */
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
 }
-
 
 .wrap {
     display: flex;
@@ -436,7 +460,7 @@ input {
     align-items: center;
 }
 
-/* Profile Styling */
+/* styling for the profile.html */
 .profile {
     position: relative;
     width: 100%;
@@ -457,7 +481,18 @@ input {
     position: relative;
 }
 
-/* Settings Button Styling */
+.profile-name {
+    font-size: 2em;
+    margin: 0;
+}
+
+.profile-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* styling for the settings button */
 .settings-button-container {
     display: flex;
     justify-content: center;
@@ -465,16 +500,16 @@ input {
 }
 
 .settings-button {
-    padding: 5px 10px; /* Reduce padding to make the button smaller */
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     background-color: #283e50;
     color: white;
-    font-size: 0.9em; /* Slightly reduce the font size */
+    font-size: 0.9em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: auto; /* Set the width to auto so it adjusts to the content */
-    min-width: 100px; /* Optional: set a minimum width if needed */
+    width: auto;
+    min-width: 100px;
 }
 
 .settings-button:hover {
@@ -484,78 +519,67 @@ input {
 #profile-page p{
     font-weight: bold;
     color: #555;
-    text-align: left; /* Align labels to the left */
-    display: block; /* Ensure labels take up full width and stay on their own line */
+    text-align: left;
+    display: block;
     font-size: 1em;
 }
 
-/* About Me Section Styling */
+/* styling for the about me section */
 .profile-text {
     display: flex;
-    flex-direction: column; /* Stack the name and description vertically */
-    justify-content: center; /* Vertically center the text */
+    flex-direction: column;
+    justify-content: center;
 }
 
-.profile-name {
-    font-size: 2em;
-    margin: 0;
-}
-
-.profile-description {
-    font-size: 1.2em;
-    color: #666;
-    margin-top: 5px; /* Add a small margin between the name and description */
-}
-
-/*member statistics section styling*/
+/*styling for the member statistics section */
 .member-statistics {
     margin-top: 30px;
     padding: 20px;
-    background-color: #FFFBE6; /* Light background for the section */
+    background-color: #FFFBE6;
     border-radius: 10px;
-    max-width: 600px; /* Limit the width of the section */
+    max-width: 600px;
     margin-left: auto;
-    margin-right: auto; /* Center the section */ 
+    margin-right: auto;
 }
 
 .member-statistics h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: #283e50; /* Matching header color */
-    text-align: left; /* Align header to the left */
+    color: #283e50;
+    text-align: left;
 }
 
 .member-statistics p {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #333; /* Text color */
+    color: #333;
 }
 
-/* About Me Section Styling */
+/* styling for the about me section in the user_settings.html */
 .about-me {
     margin-top: 30px;
     padding: 20px;
-    background-color: #FFFBE6; /* Light background for the section */
+    background-color: #FFFBE6;
     border-radius: 10px;
-    max-width: 600px; /* Limit the width of the section */
+    max-width: 600px;
     margin-left: auto;
-    margin-right: auto; /* Center the section */
+    margin-right: auto;
 }
 
 .about-me h2 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: #283e50; /* Matching header color */
-    text-align: left; /* Align header to the left */
+    color: #283e50;
+    text-align: left;
 }
 
 .about-me p {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #333; /* Text color */
+    color: #333;
 }
 
-/* Editable Input Styling */
+/* styling for user input in user_settings.html */
 .about-me input[type="text"],
 .about-me textarea {
     width: 100%;
@@ -570,17 +594,17 @@ input {
 }
 
 .about-me textarea {
-    resize: vertical; /* Allow vertical resizing */
-    min-height: 100px; /* Minimum height for textarea */
+    resize: vertical;
+    min-height: 100px;
 }
 
 .about-me label {
     font-weight: bold;
     color: #555;
-    text-align: left; /* Align labels to the left */
-    display: block; /* Ensure labels take up full width and stay on their own line */
-    margin-bottom: 5px; /* Add some space between the label and the input */
-    width: 100%; /* Ensure the label takes up the full width of the container */
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 .about-me button {
@@ -593,7 +617,7 @@ input {
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: block;
-    margin: 0 auto; /* Center the button */
+    margin: 0 auto;
 }
 
 .about-me button:hover {
@@ -602,10 +626,67 @@ input {
 
 
 
-/* Footer styling */
+/* general styling for the footer */
 footer {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+/* styling for the discussussion_page.html */
+.chat-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFBE6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F2EEDB;
+    border-radius: 10px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #283e50;
+    color: #FFFBE6;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.discussionButton button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #283e50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.discussionButton button:hover {
+    background-color: #1f3140;
 }

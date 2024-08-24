@@ -1,4 +1,4 @@
-// Function for star rating functionality
+// function for star rating functionality
 function initializeStarRating() {
     const ratings = document.querySelectorAll('.rating');
 
@@ -17,7 +17,7 @@ function initializeStarRating() {
             localStorage.setItem(ratingKey, userRating);
         });
 
-        // Load the stored rating if it exists
+        // loading saved data on rating selection
         //const ratingKey = `rating-${rating.querySelector('input').name}`;
         //const storedRating = localStorage.getItem(ratingKey);
         //if (storedRating) {
@@ -27,7 +27,7 @@ function initializeStarRating() {
     });
 }
 
-// Function for login functionality
+// function for login functionality
 function initializeLogin() {
     const loginForm = document.getElementById("login-form");
     if (loginForm) {
@@ -51,7 +51,7 @@ function initializeLogin() {
     }
 }
 
-// Function for create account functionality
+// function for create account functionality
 function initializeCreateAccount() {
     const createAccountForm = document.getElementById("create-account-form");
     if (createAccountForm) {
@@ -59,12 +59,12 @@ function initializeCreateAccount() {
         const createAccountErrorMsg = document.getElementById("new-account-error");
 
         createAccountButton.addEventListener("click", (e) => {
-            e.preventDefault(); // Prevent the form from submitting
+            e.preventDefault();
             const username = document.getElementById("first").value.trim();
             const password = document.getElementById("password").value.trim();
             const confirmPassword = document.getElementById("confirm-password").value.trim();
 
-            // Validate that all fields are filled
+            // validate that all fields are filled
             if (!username || !password || !confirmPassword) {
                 createAccountErrorMsg.style.opacity = 1;
                 createAccountErrorMsg.textContent = "All fields are required.";
@@ -74,7 +74,7 @@ function initializeCreateAccount() {
             if (password === confirmPassword && username !== "daisy") {
                 createAccountErrorMsg.style.opacity = 0;
                 alert("Account was successfully made.");
-                // Redirect to the login page
+                // redirect to the login page
                 window.location.href = "login.html";
             } else if (username === "daisy") {
                 createAccountErrorMsg.style.opacity = 1;
@@ -88,14 +88,14 @@ function initializeCreateAccount() {
 }
 
 
-// Function for calendar functionality
+// function for calendar functionality
 function initializeCalendar() {
-    // Initialize date object with current date
+    // initialize date object with current date
     let date = new Date();
     let year = date.getFullYear();
     let month = date.getMonth();
 
-    // Get the elements needed from the DOM
+    // get the elements needed from the DOM
     const daysElement = document.querySelector(".days");
     const currentDateElement = document.querySelector(".month ul li:nth-child(2)");
     const prevNextIcons = document.querySelectorAll(".month ul li");
@@ -105,9 +105,9 @@ function initializeCalendar() {
         "July", "August", "September", "October", "November", "December"
     ];
 
-    // Function to render the calendar
+    // function to render the calendar
     function renderCalendar() {
-        // Get first day of the current month and last date of the current month
+        // get first day of the current month and last date of the current month
         let firstDayOfMonth = new Date(year, month, 1).getDay();
         let lastDateOfMonth = new Date(year, month + 1, 0).getDate();
         let lastDayOfMonth = new Date(year, month, lastDateOfMonth).getDay();
@@ -115,37 +115,37 @@ function initializeCalendar() {
 
         let liTags = "";
 
-        // Dates from the previous month
+        // dates from the previous month
         for (let i = firstDayOfMonth; i > 0; i--) {
             liTags += `<li><span class="inactive">${lastDateOfLastMonth - i + 1}</span></li>`;
         }
 
-        // Dates of the current month
+        // dates of the current month
         for (let i = 1; i <= lastDateOfMonth; i++) {
             // Highlight today's date
             let isToday = i === date.getDate() && month === new Date().getMonth() && year === new Date().getFullYear() ? "active" : "";
             liTags += `<li><span class="${isToday}">${i}</span></li>`;
         }
 
-        // Dates from the next month
+        // dates from the next month
         for (let i = lastDayOfMonth; i < 6; i++) {
             liTags += `<li><span class="inactive">${i - lastDayOfMonth + 1}</span></li>`;
         }
 
-        // Set the current month and year in the header
+        // set the current month and year in the header
         currentDateElement.innerHTML = `${months[month]}<br><span style="font-size:18px">${year}</span>`;
-        // Populate the days in the calendar
+        // populate the days in the calendar
         daysElement.innerHTML = liTags;
     }
 
 
-    // Event listeners for the previous and next icons
+    // event listeners for the previous and next icons
     prevNextIcons.forEach(icon => {
         icon.addEventListener("click", () => {
-            // Update month based on the clicked icon
+            // update month based on the clicked icon
             month = icon.classList.contains("prev") ? month - 1 : month + 1;
 
-            // Handle year change
+            // handle year change
             if (month < 0 || month > 11) {
                 date = new Date(year, month);
                 year = date.getFullYear();
@@ -154,26 +154,26 @@ function initializeCalendar() {
                 date = new Date();
             }
 
-            // Render the calendar again with the new month and year
+            // render the calendar again with the new month and year
             renderCalendar();
         });
     });
 
-    // Initial call to render the calendar
+    // initial call to render the calendar
     renderCalendar();
 }
 
-//profile settings button function
+// profile settings button function
 function goToSettings() {
     window.location.href = 'user_settings.html';
 }
 
-//settings profile button function
+// settings profile button function
 function goToProfile() {
     window.location.href = 'user_profile.html';
 }
 
-// Initialize all functionalities when DOM is fully loaded
+// initialize all functionalities when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     initializeLogin();
     initializeCreateAccount();
