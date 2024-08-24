@@ -21,8 +21,8 @@ function initializeStarRating() {
         //const ratingKey = `rating-${rating.querySelector('input').name}`;
         //const storedRating = localStorage.getItem(ratingKey);
         //if (storedRating) {
-            //document.getElementById(`star${storedRating}-${rating.querySelector('input').name.split('-')[1]}`).checked = true;
-            //ratingDisplay.textContent = `Your rating: ${storedRating} stars`;
+        //    document.getElementById(`star${storedRating}-${rating.querySelector('input').name.split('-')[1]}`).checked = true;
+        //    ratingDisplay.textContent = `Your rating: ${storedRating} stars`;
         //}
     });
 }
